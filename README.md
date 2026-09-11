@@ -1,10 +1,10 @@
-# Catch the Stars ⭐
+# Catch the Stars 
 
 A simple beginner-friendly Python game made with **PyGame**.
 
 The player controls a bucket and tries to catch falling stars.
 
-## 🎮 How to Play
+## How to Play
 
 - **Left Arrow** — move the bucket left
 - **Right Arrow** — move the bucket right
@@ -15,7 +15,7 @@ The player controls a bucket and tries to catch falling stars.
 - **R** — restart after Game Over
 - **ESC** — quit
 
-## ▶️ How to Run
+## How to Run
 
 Make sure Python is installed.
 
@@ -31,7 +31,7 @@ Then run:
 python main.py
 ```
 
-## 🧠 Python Concepts Demonstrated
+## Python Concepts Demonstrated
 
 This project intentionally uses basic Python concepts:
 
@@ -46,7 +46,7 @@ This project intentionally uses basic Python concepts:
 - Random numbers
 - Basic object collision
 
-## 🧩 How the Game Works
+## How the Game Works
 
 The game repeatedly performs three main steps:
 
@@ -56,12 +56,10 @@ The game repeatedly performs three main steps:
 
 This repeating process is called the **game loop**.
 
-## 📁 Assets
+## Assets
 
 No external image assets are required.
 
 The bucket, stars, background, text, and other visual elements are generated directly with PyGame drawing functions. This makes the project easy to run and share.
 
-## 🎓 Portfolio Purpose
 
-This project was created as a small Python/PyGame portfolio example demonstrating fundamental programming and interactive-game concepts.
