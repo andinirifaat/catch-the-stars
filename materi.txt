@@ -1,0 +1,178 @@
+CATCH THE STARS
+Python Basic Concepts Used in the Game
+
+1. VARIABLES
+   Variables digunakan untuk menyimpan informasi yang dibutuhkan oleh program.
+
+Contoh:
+score = 0
+lives = 3
+speed = 7
+
+Pada game ini:
+
+* score menyimpan jumlah bintang yang berhasil ditangkap.
+* lives menyimpan jumlah nyawa pemain.
+* speed menentukan seberapa cepat pemain bergerak.
+
+----------------------------------------------------------------------------------------------------------
+
+2. LIST
+   List digunakan untuk menyimpan beberapa data dalam satu tempat.
+
+Contoh:
+stars = []
+
+List stars digunakan untuk menyimpan bintang yang sedang ada di dalam game.
+
+Kita dapat menambahkan data menggunakan:
+stars.append(new_star())
+
+Dan menghapus data menggunakan:
+stars.remove(star)
+
+----------------------------------------------------------------------------------------------------------
+
+3. DICTIONARY
+   Dictionary digunakan untuk menyimpan beberapa informasi yang berpasangan. Pasangan ini disebut Key (Kunci) dan Value (Nilai).
+
+Contoh:
+{
+"x": 100,
+"y": 50,
+"speed": 5
+}
+
+Setiap bintang memiliki posisi x, posisi y, dan kecepatan.
+
+----------------------------------------------------------------------------------------------------------
+
+4. FUNCTION
+   Function adalah bagian kode yang dibuat untuk melakukan tugas tertentu.
+
+Contoh:
+def new_star():
+...
+
+Game ini menggunakan beberapa function:
+
+* new_star() → membuat bintang baru.
+* reset_game() → mengembalikan game ke kondisi awal.
+* draw_star() → menggambar bintang.
+
+----------------------------------------------------------------------------------------------------------
+
+5. LOOP
+   Loop digunakan untuk menjalankan kode berulang kali.
+
+Contoh utama:
+while running: ->untuk membuat jendela game selalu muncul 
+
+**a. For Loop:** Dipakai kalau kita sudah tahu mau mengulang **berapa kali** (misal: jalan 5 langkah).
+
+**b. While Loop:** Dipakai kalau kita mau mengulang **selama syaratnya masih terpenuhi** (misal: terus berlari *selama* tombol maju ditekan).
+
+----------------------------------------------------------------------------------------------------------
+
+6. CONDITIONAL Sentence (Percabangan)
+
+Conditional sentence digunakan agar program dapat mengambil keputusan.
+
+a. IF
+IF menunjukkan kondisi
+
+Contoh:
+if keys[pygame.K_LEFT]:
+player.x -= speed
+
+Artinya:
+Jika pemain menekan tombol kiri, maka pemain bergerak ke kiri.
+
+Contoh lain:
+if player.colliderect(star_rect):
+score += 1
+
+Artinya:
+Jika pemain menyentuh bintang, score bertambah satu.
+
+b. IF - ELIF - ELSE
+Program juga menggunakan if dan elif untuk menangani kondisi yang berbeda., dan else jika kondisi sebelumnya tidak terpenuhi
+
+Contoh:
+if player.colliderect(star_rect):
+score += 1
+stars.remove(star)
+
+```
+elif star["y"] > HEIGHT:
+    lives -= 1
+    stars.remove(star)
+```
+
+Jika bintang tertangkap, score bertambah.
+
+Jika bintang jatuh sampai melewati layar, nyawa berkurang.
+
+----------------------------------------------------------------------------------------------------------
+
+7. OPERATORS
+   Game simbol operasi matematika yang digunakan di Python.
+
+Contoh:
+score += 1
+lives -= 1
+lives <= 0
+
++= digunakan untuk menambah nilai.
+-= digunakan untuk mengurangi nilai.
+<= digunakan untuk membandingkan nilai.
+
+----------------------------------------------------------------------------------------------------------
+
+8. INPUT
+   Sesuatu yang diterima dari pemain melalui keyboard.
+
+Contoh:
+pygame.K_LEFT -> saat mencet tombol panah kiri artinya bergerak ke kiri
+pygame.K_RIGHT -> saat mencet tombol panah kanan artinya bergerak ke kanan
+pygame.K_ESCAPE -> saat mencet tombol escape artinya keluar dari game
+pygame.K_r ->saat mencet tombol "R' artinya memulai game baru
+
+----------------------------------------------------------------------------------------------------------
+
+9. GAME FLOW
+   Game menggunakan aturan sederhana:
+
+Start Game 
+
+↓
+
+Pemain menangkap bintang
+↓
+Score + 1
+
+Pemain melewatkan bintang
+↓
+Life - 1
+
+Life = 0
+↓
+Game Over
+
+↓
+
+Restart Game : Klik R
+
+----------------------------------------------------------------------------------------------------------
+
+MAIN PYTHON CONCEPTS DEMONSTRATED
+
+* Variables : menyimpan parameter yang dibutuhkan program
+* List : "keranjang" yang menyimpan beberapa data dalam satu temapt
+* Dictionary : Dictionary (sering disebut Dict) adalah tempat menyimpan data yang berpasangan. Pasangan ini disebut Key (Kunci) dan Value (Nilai).
+* Functions : blok code dengan tujuan tertentu
+* Perulangan (loop) : digunakan untuk menjalankan kode berulang kali (jadi kita tidak boros energi)
+* Percabangan (Conditional) : digunakan agar program dapat mengambil keputusan.
+* Operators
+* Keyboard Input
+* Logical Thinking
